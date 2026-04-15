@@ -91,6 +91,7 @@ The architecture follows a simple serverless static hosting model:
 ├── deploy.sh
 ├── bucket-policy.json
 └── README.md
+<img width="346" height="161" alt="image" src="https://github.com/user-attachments/assets/42656936-2ca1-418e-afb9-b16b85cade9f" />
 
 
 ---
