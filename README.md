@@ -1,65 +1,43 @@
-# 🌐 AWS S3 Static Website Hosting
+# 🚀 AWS S3 Static Website Deployment (DevOps Project)
 
 ## 📌 Overview
-This project demonstrates how to host a static website using AWS S3. It includes configuration of public access, bucket policies, and deployment automation using AWS CLI.
+
+This project demonstrates a fully automated deployment of a static website using **Amazon Web Services (AWS) S3**, implemented with a Bash-based deployment script. The solution showcases core DevOps practices including infrastructure automation, cloud storage configuration, and static web hosting.
+
+The project focuses on deploying a highly available and cost-effective static website using AWS S3 without the need for traditional backend servers.
 
 ---
 
-## 🛠️ Technologies Used
-- AWS S3
+## 🏗️ Architecture
+
+The architecture follows a simple serverless static hosting model:
+
+- Source code stored locally / GitHub repository
+- Deployment automation via Bash script
+- AWS S3 bucket used for static hosting
+- Public access enabled via bucket policy
+
+---
+
+## ⚙️ Technologies Used
+
+- AWS S3 (Static Website Hosting)
 - AWS CLI
-- HTML5 / CSS3
+- Bash Scripting
+- HTML / CSS
+- Git & GitHub
 
 ---
 
 ## 🚀 Features
-- Static website hosting on AWS S3
-- Public access configuration
-- Automated deployment script
-- Simple and scalable architecture
+
+- Automated S3 bucket creation
+- Static website hosting configuration
+- File upload automation to S3
+- Public access configuration via bucket policy
+- Error handling for deployment re-runs
+- Fully script-based deployment (no manual AWS console steps)
 
 ---
 
-## 📁 Project Structure
-s3-static-website/
-│── index.html
-│── style.css
-│── error.html
-│── deploy.sh
-│── bucket-policy.json
-│── README.md
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Configure AWS CLI
-```bash
-aws configure
-
-2. Update Bucket Name
-
-Edit:
-
-deploy.sh
-bucket-policy.json
-
-Replace:
-🌍 Access Website:
-http://your-bucket-name.s3-website-region.amazonaws.com
-
-✅ Outcome
-Hosted a static website using AWS S3
-Automated deployment using AWS CLI
-Configured secure public access
-
-🔮 Future Improvements
-Add CloudFront (CDN)
-Enable HTTPS
-Implement CI/CD pipeline (GitHub Actions)
-
-👨‍💻 Author
-
-[Safia Addow]
-
-
+## 📂 Project Structure
