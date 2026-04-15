@@ -96,102 +96,35 @@ The architecture follows a simple serverless static hosting model:
 
 ---
 
-## 🔄 Deployment Process
+## ⚙️ Setup Instructions
 
-The deployment script performs the following steps:
+### 1. Configure AWS CLI
+```bash
+aws configure
 
-1. Creates an S3 bucket
-2. Enables static website hosting
-3. Uploads website files (HTML/CSS)
-4. Disables block public access
-5. Applies bucket policy for public read access
-6. Outputs the website endpoint URL
+2. Update Bucket Name
 
----
+Edit:
 
-## 🌐 Live Website
+deploy.sh
+bucket-policy.json
 
-```
-http://your-bucket-name.s3-website-eu-west-2.amazonaws.com
-```
+Replace:
+🌍 Access Website:
+http://your-bucket-name.s3-website-region.amazonaws.com
 
----
+✅ Outcome
+Hosted a static website using AWS S3
+Automated deployment using AWS CLI
+Configured secure public access
 
-## 🧠 Key DevOps Concepts Demonstrated
+🔮 Future Improvements
+Add CloudFront (CDN)
+Enable HTTPS
+Implement CI/CD pipeline (GitHub Actions)
 
-- Infrastructure as Code (IaC) principles using scripting
-- Cloud storage provisioning and configuration
-- Automation of deployment processes
-- IAM and S3 bucket policy management
-- Serverless static web hosting
+👨‍💻 Author
 
----
+[Safia Addow]
 
-## 📊 Architecture Diagram
-
-### 📌 High-Level Design
-
-Below is the system architecture:
-
-```
-Developer (Local Machine)
-        |
-        |  deploy.sh (AWS CLI)
-        v
-AWS S3 Bucket
-        |
-        |-- index.html
-        |-- style.css
-        |-- error.html
-        |
-        v
-Static Website Hosting Enabled
-        |
-        v
-Public Users (Browser Access)
-```
-
----
-
-## 🖼️ Lucidchart Diagram (Recommended)
-
-Create this in **Lucidchart** using the following structure:
-
-### 🔷 Components to include:
-
-- Developer Laptop (Git / Bash Script)
-- GitHub Repository (optional enhancement)
-- AWS CLI
-- Amazon S3 Bucket
-- Static Website Hosting Layer
-- Internet Users (Browser)
-
-### 🔷 Flow:
-
-```
-Developer → GitHub Repo → AWS CLI → S3 Bucket → Static Website → Users
-```
-
-### 🔷 Styling tips for interview:
-- Use AWS icons (official Lucidchart library)
-- Use arrows showing deployment flow
-- Label S3 bucket as:
-  “Static Website Hosting Enabled”
-
----
-
-## 📈 Future Improvements
-
-- Add CI/CD pipeline using GitHub Actions
-- Add Terraform for Infrastructure as Code
-- Add CloudFront CDN for performance and HTTPS
-- Add custom domain using Route 53
-
----
-
-## 👨‍💻 Author
-
-Safia Addow  
-DevOps Engineer (Aspiring)  
-```
 
